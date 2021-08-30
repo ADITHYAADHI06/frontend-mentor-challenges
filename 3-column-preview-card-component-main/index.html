@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+   
+    *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+
+    }
+    .center{
+       
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  .one{
+    padding: 35px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    width: 250px;
+    height: 390px;
+    background-color: hsl(31, 77%, 52%);
+  }
+  img{
+    margin-bottom: 20px;
+  }
+  .heading{
+    margin-bottom: 25px;
+         color: hsl(0, 0%, 95%);
+           text-transform: uppercase;
+           font-weight: 700;
+           font-family: Big Shoulders Display;
+  }
+  .para{
+    margin-bottom: 60px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+ 
+  .two{
+    padding: 35px;
+    width: 250px;
+    height: 390px;
+    background-color: hsl(184, 100%, 22%);
+  
+  }
+   .three{
+    padding: 35px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 250px;
+    height: 390px;
+    background-color: hsl(179, 100%, 13%);
+  }
+  .one a{
+    color: hsl(31, 77%, 52%);
+  
+    border-radius: 20px;
+    padding: 8px 14px;
+    border: 2px solid hsl(0, 0%, 95%);
+
+    background-color: hsl(0, 0%, 95%);
+  }
+  .two a{
+  
+    color: hsl(184, 100%, 22%);
+    border-radius: 20px;
+    padding: 8px 14px;
+    border: 2px solid hsl(0, 0%, 95%);
+
+    background-color: hsl(0, 0%, 95%);
+  }
+  .three a{
+  
+   color: hsl(179, 100%, 13%);
+    border-radius: 20px;
+    padding: 8px 14px;
+    border: 2px solid hsl(0, 0%, 95%);
+
+    background-color: hsl(0, 0%, 95%);
+  }
+  a:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="center">
+  <div class="container">
+    <div class="one">
+      <img src="images/icon-sedans.svg" alt="">
+   <h1 class="heading">Sedans</h1>
+   <p class="para">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+    or on your next road trip.</p>
+   <a href="">Learn More</a>
+    </div>
+  
+    <div class="two">
+      <img src="images/icon-sedans.svg" alt="">
+   <h1 class="heading"> SUVs</h1>
+   <p class="para">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+    and off-road adventures.</p>
+   <a href="">Learn More</a>
+    </div>
+ 
+    <div class="three">
+      <img src="images/icon-sedans.svg" alt="">
+   <h1 class="heading">Luxury</h1>
+   <p class="para">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+    rental and arrive in style.</p>
+   <a href="">Learn More</a>
+    </div>
+  </div>
+
+ 
+</div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
