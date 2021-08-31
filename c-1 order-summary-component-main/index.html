@@ -22,17 +22,17 @@
       box-sizing: border-box;
       text-decoration: none;
     }
-    .container_main {
+    body {
       margin: 15px 70px;
       background-color: #E0E8FF; 
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-position:100% auto;
     }
 
     .container {
       width: 100%;
       height: 95vh;
-      background-image: url(images/pattern-background-desktop.svg);
-      background-repeat: no-repeat;
-      background-position:top;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -99,6 +99,7 @@
     }
 
     .card_plans a{
+      cursor: pointer;
       font-size: 13px;
       font-weight: 600;
       color: hsl(228, 91%, 55%);
@@ -139,6 +140,7 @@
 
     .button .payment_btn a {
       color: #fff;
+      cursor: pointer;
       font-size: 13px;
       font-weight: 600;
 
@@ -156,6 +158,7 @@
       color: #98989b;
       font-weight: 550;
       font-size: 12px;
+      cursor: pointer;
     }
     .payment_btn:hover{
       opacity: 0.8;
@@ -169,28 +172,23 @@
      /* responsive section start */
     @media screen and (max-width: 500px) {
     
- .container_main{
-               margin: 0;
-               width: 100%; 
-               height: 100vh;
-                } 
-
+      .card{
+       margin: 10px;
+          padding: 0;
+        max-height: 500px;
+ } 
 
      .card_plans{
-                  width: 85%;
-                    } */
+                  max-width: 85%;
+
+                    } 
+
  .button .payment_btn,.button .cancel_btn{
                        width: 85%;
                           margin-left: 25px;
  }
  
  
- 
-  .card{
-       margin: 10px;
-          padding: 0;
-        height: 460px;
- } 
 figure img{
   height: 140px;
 }
@@ -206,7 +204,7 @@ figure img{
 </head>
 
 <body>
-  <div class="container_main">
+ 
     <div class="container">
       <div class="card">
         <figure>
@@ -235,7 +233,7 @@ figure img{
         </div>
       </div>
     </div>
-  </div>
+  
 
 
 </body>
